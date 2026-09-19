@@ -5,6 +5,7 @@ time: logging billable hours against projects, and summarizing them.
 """
 import sqlite3
 from pathlib import Path
+import os
 
 DB_PATH = Path(
     os.getenv("TIMETRACK_DB_PATH", "/tmp/timetrack.db")
